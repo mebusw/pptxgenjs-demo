@@ -26,6 +26,18 @@ pres.defineSlideMaster({
         { rect: { x: 0.0, y: 5.3, w: "100%", h: 0.75, fill: { color: "F1F1F1" } } },
         { text: { text: "Status Report", options: { x: 3.0, y: 5.3, w: 5.5, h: 0.75 } } },
         { image: { x: 12, y: 1, w: 3.2, h: 0.75, path: "images/logo.png" } },
+        {
+            placeholder: {
+                options: { name: "title", type: "title", x: 0.6, y: 0.5, w: 12, h: 1.25 },
+                text: "(custom placeholder title!)",
+            },
+        },
+        {
+            placeholder: {
+                options: { name: "body", type: "body", x: 0.6, y: 1.5, w: 12, h: 5.25 },
+                text: "(custom placeholder body!)",
+            },
+        },
     ],
     slideNumber: { x: 0.3, y: "90%" },
 });
@@ -33,6 +45,8 @@ pres.defineSlideMaster({
 
 // 2. Add a Slide to the presentation
 let slide1 = pres.addSlide({ masterName: "MASTER_SLIDE" });
+slide1.addText("Slide 1 大标题", { placeholder: "title" });
+slide1.addText("Body Placeholder here!", { placeholder: "body" });
 slide1.background = { color: "FF3399", transparency: 50 }; // hex fill color with transparency of 50%
 // slide.background = { data: "image/png;base64,ABC[...]123" }; // image: base64 data
 // slide.background = { path: "https://some.url/image.jpg" }; // image: url
