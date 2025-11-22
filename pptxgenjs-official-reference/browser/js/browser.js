@@ -2,9 +2,9 @@
  * NAME: browser.js
  * DESC: module for /demos/browser/index.html
  */
-import { execGenSlidesFuncs, runEveryTest } from "../../modules/demos.mjs";
-import { TABLE_NAMES_F, TABLE_NAMES_L, LOREM_IPSUM } from "../../modules/enums.mjs";
-import { BKGD_STARLABS, CHECKMARK_GRN, LOGO_STARLABS, STARLABS_LOGO_SM } from "../../modules/media.mjs";
+import { execGenSlidesFuncs, runEveryTest } from "../../../modules/demos.mjs";
+import { TABLE_NAMES_F, TABLE_NAMES_L, LOREM_IPSUM } from "../../../modules/enums.mjs";
+import { BKGD_STARLABS, CHECKMARK_GRN, LOGO_STARLABS, STARLABS_LOGO_SM } from "../../../modules/media.mjs";
 
 // ==================================================================================================================
 const modalBusy = new bootstrap.Modal(document.getElementById('modalBusy'));

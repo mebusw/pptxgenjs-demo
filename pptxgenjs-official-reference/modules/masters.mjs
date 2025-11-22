@@ -7,8 +7,8 @@
  * BLD.: 20210421
  */
 
-import { IMAGE_PATHS } from "../modules/enums.mjs";
-import { STARLABS_LOGO_SM } from "../modules/media.mjs";
+import { IMAGE_PATHS } from "./enums.mjs";
+import { STARLABS_LOGO_SM } from "./media.mjs";
 
 export function createMasterSlides(pptx) {
 	let objBkg = { path: IMAGE_PATHS.starlabsBkgd.path };
