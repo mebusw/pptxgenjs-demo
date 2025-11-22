@@ -32,6 +32,9 @@ pres.defineSlideMaster({
 
 let buildSlides = (pres) => {
     let slide1 = pres.addSlide({ masterName: "MASTER_SLIDE" });
+    console.log("building slide1...");
+    //...
+
 }
 
 // 2. Add a Slide to the presentation
